@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kwadrat</title>
+<link rel="stylesheet" type="text/css" href="style.css" media='screen'/>
+<script type="text/javascript" src="skrypt.js"></script>
+<script type="text/javascript" src="kwadratowe.js"></script>
+</head>
+
+
+<body onLoad="uzupelnij(); zegarek(); setInterval(zegarek, 1000); podpiecie();">
+	<div class="Kontener">
+		<div class="Naglowek">
+		<h1> Równanie kwadratowe </h1>	
+		</div>
+		
+		<div class="Srodek">
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">Strona glówna</a></li>
+					<li><a href="kwadrat.html">Równanie kwadratowe</a></li>
+					<li><a href="matematycy.html">Sławni matematycy</a></li>
+				</ul>
+					<div class="newsy">
+					<p class="news" id="urodziny">
+					Newsy costam costam costam costam costam costam </p>
+				</div>
+			</div>
+			<div class="tresc">
+				<form id="dane" name="dane">
+					<input placeholder="a" type="number" id="wsp_a" name="wa"> x<sup>2</sup>+
+					<input placeholder="b" type="number" id="wsp_b" name="wb"> x+
+					<input placeholder="c" type="number" id="wsp_c" name="wc"><br/>
+					<div id="przycisk">
+						<input type="button" id="licz" value="Oblicz">
+					</div>
+				</form>
+				<div class="pierwiastki" id="lista">
+				</div>
+			</div>
+		</div>		
+		
+		<div class="Stopka" id='stopka'>
+			&copy;2017 Stopka
+		</div>		
+	</div>
+	
+	
+</body>
+</html>
